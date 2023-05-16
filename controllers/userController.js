@@ -311,11 +311,16 @@ const getData = async function (req, res) {
         }
       }
 
+ const welcome = async function (req, res) {  
+  return  res.status(500).send({ status: true, message: "all working fine" })
+ }
+
 //*******************************************************************//
 
  module.exports.registerUser = registerUser
  module.exports.loginUser = loginUser
  module.exports.getData = getData
  module.exports.updateProfile = updateProfile
+ module.exports.welcome = welcome
 
 //*******************************************************************//
